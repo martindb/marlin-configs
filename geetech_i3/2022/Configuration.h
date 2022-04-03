@@ -863,9 +863,9 @@
  *          TMC5130, TMC5130_STANDALONE, TMC5160, TMC5160_STANDALONE
  * :['A4988', 'A5984', 'DRV8825', 'LV8729', 'L6470', 'L6474', 'POWERSTEP01', 'TB6560', 'TB6600', 'TMC2100', 'TMC2130', 'TMC2130_STANDALONE', 'TMC2160', 'TMC2160_STANDALONE', 'TMC2208', 'TMC2208_STANDALONE', 'TMC2209', 'TMC2209_STANDALONE', 'TMC26X', 'TMC26X_STANDALONE', 'TMC2660', 'TMC2660_STANDALONE', 'TMC5130', 'TMC5130_STANDALONE', 'TMC5160', 'TMC5160_STANDALONE']
  */
-#define X_DRIVER_TYPE  A4988
-#define Y_DRIVER_TYPE  A4988
-#define Z_DRIVER_TYPE  A4988
+#define X_DRIVER_TYPE DRV8825 // MDB
+#define Y_DRIVER_TYPE DRV8825 // MDB
+#define Z_DRIVER_TYPE DRV8825 // MDB
 //#define X2_DRIVER_TYPE A4988
 //#define Y2_DRIVER_TYPE A4988
 //#define Z2_DRIVER_TYPE A4988
@@ -874,7 +874,7 @@
 //#define I_DRIVER_TYPE  A4988
 //#define J_DRIVER_TYPE  A4988
 //#define K_DRIVER_TYPE  A4988
-#define E0_DRIVER_TYPE A4988
+#define E0_DRIVER_TYPE DRV8825 // MDB
 //#define E1_DRIVER_TYPE A4988
 //#define E2_DRIVER_TYPE A4988
 //#define E3_DRIVER_TYPE A4988
@@ -976,7 +976,7 @@
  * When changing speed and direction, if the difference is less than the
  * value set here, it may happen instantaneously.
  */
-#define CLASSIC_JERK // MDB
+// #define CLASSIC_JERK // MDB
 #if ENABLED(CLASSIC_JERK)
 #define DEFAULT_XJERK 8.0 // MDB
 #define DEFAULT_YJERK 8.0 // MDB
@@ -996,7 +996,7 @@
   #endif
 #endif
 
-#define DEFAULT_EJERK 1.0 // May be used by Linear Advance  // MDB
+#define DEFAULT_EJERK 5.0 // May be used by Linear Advance
 
 /**
  * Junction Deviation Factor
@@ -1019,7 +1019,7 @@
  *
  * See https://github.com/synthetos/TinyG/wiki/Jerk-Controlled-Motion-Explained
  */
-#define S_CURVE_ACCELERATION // MDB
+//#define S_CURVE_ACCELERATION
 
 //===========================================================================
 //============================= Z Probe Options =============================
@@ -1393,7 +1393,7 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 200 // MDB
+#define Z_MAX_POS 180 // MDB
 //#define I_MIN_POS 0
 //#define I_MAX_POS 50
 //#define J_MIN_POS 0
@@ -1606,7 +1606,7 @@
 #if ENABLED(G26_MESH_VALIDATION)
 #define MESH_TEST_NOZZLE_SIZE 0.4  // (mm) Diameter of primary nozzle.
 #define MESH_TEST_LAYER_HEIGHT 0.2 // (mm) Default layer height for G26.
-#define MESH_TEST_HOTEND_TEMP 220  // (°C) Default nozzle temperature for G26. // MDB
+#define MESH_TEST_HOTEND_TEMP 210  // (°C) Default nozzle temperature for G26. // MDB
 #define MESH_TEST_BED_TEMP 60      // (°C) Default bed temperature for G26.
 #define G26_XY_FEEDRATE 20         // (mm/s) Feedrate for G26 XY moves.
 #define G26_XY_FEEDRATE_TRAVEL 100 // (mm/s) Feedrate for G26 XY travel moves.
