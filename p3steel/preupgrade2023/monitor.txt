@@ -1,0 +1,50 @@
+16:21:18.803 > start
+16:21:18.803 > echo:Marlin bugfix-2.0.x
+16:21:18.803 > 
+16:21:18.804 > echo: Last Updated: 2018-01-20 | Author: (MartinDB, Ramps P3Steel)
+16:21:18.807 > echo:Compiled: Oct 23 2018
+16:21:18.807 > echo: Free Memory: 2475  PlannerBufferBytes: 1632
+16:21:18.824 > echo:V61 stored settings retrieved (569 bytes; crc 8232)
+16:21:18.826 > Unified Bed Leveling System v1.01 active.
+16:21:18.879 > 
+16:21:18.879 > Unified Bed Leveling initialized.
+16:21:18.881 > 
+16:21:18.885 > Mesh loaded from slot 0
+16:21:18.885 > Mesh 0 loaded from storage.
+16:21:18.886 > echo:  G21    ; Units in mm (mm)
+16:21:18.887 > echo:  M149 C ; Units in Celsius
+16:21:18.889 > 
+16:21:18.889 > echo:Filament settings: Disabled
+16:21:18.890 > echo:  M200 D1.75
+16:21:18.891 > echo:  M200 D0
+16:21:18.891 > echo:Steps per unit:
+16:21:18.893 > echo:  M92 X100.00 Y100.00 Z400.00 E135.00
+16:21:18.894 > echo:Maximum feedrates (units/s):
+16:21:18.896 > echo:  M203 X300.00 Y300.00 Z3.00 E300.00
+16:21:18.898 > echo:Maximum Acceleration (units/s2):
+16:21:18.900 > echo:  M201 X800.00 Y800.00 Z30.00 E2000.00
+16:21:18.901 > echo:Acceleration (units/s2): P<print_accel> R<retract_accel> T<travel_accel>
+16:21:18.905 > echo:  M204 P500.00 R2000.00 T500.00
+16:21:18.907 > echo:Advanced: B<min_segment_time_us> S<min_feedrate> T<min_travel_feedrate> J<junc_dev>
+16:21:18.911 > echo:  M205 B20000.00 S0.00 T0.00 J0.02
+16:21:18.912 > echo:Home offset:
+16:21:18.912 > echo:  M206 X0.00 Y0.00 Z0.00
+16:21:18.913 > echo:Unified Bed Leveling:
+16:21:18.915 > echo:  M420 S1 Z10.00
+16:21:18.916 > 
+16:21:18.916 > Unified Bed Leveling System v1.01 active.
+16:21:18.968 > 
+16:21:18.969 > Active Mesh Slot: 0
+16:21:18.969 > EEPROM can hold 8 meshes.
+16:21:18.970 > 
+16:21:18.970 > echo:Material heatup parameters:
+16:21:18.972 > echo:  M145 S0 H210 B60 F0
+16:21:18.973 > echo:  M145 S1 H240 B110 F0
+16:21:18.974 > echo:PID settings:
+16:21:18.974 > echo:  M301 P23.85 I2.13 D66.92
+16:21:18.975 > echo:  M304 P97.78 I18.65 D128.17
+16:21:18.977 > echo:Z-Probe Offset (mm): (mm):
+16:21:18.978 > echo:  M851 Z-2.40
+16:21:18.979 > echo:Linear Advance:
+16:21:18.982 > echo:  M900 K0.48
+16:21:22.497 > echo:SD card ok
