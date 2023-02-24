@@ -1175,8 +1175,7 @@
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
 // #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 500 }
-#define DEFAULT_AXIS_STEPS_PER_UNIT { 100, 100, 400, 150 } // X/Y con poleas de 16, GT2 - Z con T8, Extrusor calibrado con 100mm// MDB
-
+#define DEFAULT_AXIS_STEPS_PER_UNIT { 100, 100.6, 400, 150.3 } // X/Y con poleas de 16, GT2 - Z con T8, Extrusor calibrado con 100mm// MDB
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
  * Override with M203
@@ -1499,7 +1498,7 @@
  *     O-- FRONT --+
  */
 // #define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }
-#define NOZZLE_TO_PROBE_OFFSET { 30, 3, -1.25 } // MDB
+#define NOZZLE_TO_PROBE_OFFSET { 30, 3, -2.05 } // MDB
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
