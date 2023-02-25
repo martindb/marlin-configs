@@ -1,0 +1,10 @@
+11:09:05.285 > start
+11:09:05.285 > Marlin 2.0.9.3
+11:09:05.285 > echo: Last Updated: 2021-12-25 | Author: (MartinDB, Ramps Geeetech I3)
+11:09:05.285 > echo: Compiled: Apr  3 2022
+11:09:05.285 > echo: Free Memory: 1895  PlannerBufferBytes: 1456
+11:09:05.675 > echo:V86 stored settings retrieved (632 bytes; crc 46795)
+11:09:05.678 > Unified Bed Leveling System v1.01 active
+11:09:05.735 > Mesh loaded from slot 0
+11:09:05.736 > Mesh 0 loaded from storage.
+11:09:10.204 > echo:SD card ok
