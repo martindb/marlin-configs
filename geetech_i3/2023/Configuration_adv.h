@@ -303,9 +303,9 @@
 #define THERMAL_PROTECTION_PERIOD 60    // Seconds // MDB, original 40
 #define THERMAL_PROTECTION_HYSTERESIS 6 // Degrees Celsius // MDB, original 4
 
-  //#define ADAPTIVE_FAN_SLOWING              // Slow part cooling fan if temperature drops
+  #define ADAPTIVE_FAN_SLOWING              // Slow part cooling fan if temperature drops // MDB
   #if BOTH(ADAPTIVE_FAN_SLOWING, PIDTEMP)
-    //#define NO_FAN_SLOWING_IN_PID_TUNING    // Don't slow fan speed during M303
+    #define NO_FAN_SLOWING_IN_PID_TUNING    // Don't slow fan speed during M303 // MDB
   #endif
 
   /**
@@ -2062,7 +2062,7 @@
 #if ENABLED(BABYSTEPPING)
 // #define INTEGRATED_BABYSTEPPING         // EXPERIMENTAL integration of babystepping into the Stepper ISR
 // #define BABYSTEP_WITHOUT_HOMING
-#define BABYSTEP_ALWAYS_AVAILABLE       // Allow babystepping at all times (not just during movement). // MDB
+// #define BABYSTEP_ALWAYS_AVAILABLE       // Allow babystepping at all times (not just during movement). 
   //#define BABYSTEP_XY                     // Also enable X/Y Babystepping. Not supported on DELTA!
   #define BABYSTEP_INVERT_Z false           // Change if Z babysteps should go the other way
   //#define BABYSTEP_MILLIMETER_UNITS       // Specify BABYSTEP_MULTIPLICATOR_(XY|Z) in mm instead of micro-steps
@@ -2079,7 +2079,7 @@
     #endif
   #endif
 
-#define BABYSTEP_DISPLAY_TOTAL          // Display total babysteps since last G28 // MDB
+// #define BABYSTEP_DISPLAY_TOTAL          // Display total babysteps since last G28
 
 #define BABYSTEP_ZPROBE_OFFSET          // Combine M851 Z and Babystepping // MDB
   #if ENABLED(BABYSTEP_ZPROBE_OFFSET)
