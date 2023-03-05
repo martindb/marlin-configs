@@ -1217,7 +1217,7 @@
  * When changing speed and direction, if the difference is less than the
  * value set here, it may happen instantaneously.
  */
-//#define CLASSIC_JERK
+#define CLASSIC_JERK // MDB
 #if ENABLED(CLASSIC_JERK)
   #define DEFAULT_XJERK 10.0
   #define DEFAULT_YJERK 10.0
@@ -1486,7 +1486,8 @@
  *     O-- FRONT --+
  */
 // #define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }
-#define NOZZLE_TO_PROBE_OFFSET { -23, -40, -0.3 } // MDB
+// #define NOZZLE_TO_PROBE_OFFSET { -23, -40, -0.3 } // MDB Sensor 12mm al lado de ventiladores y barrel estandard
+#define NOZZLE_TO_PROBE_OFFSET { 7.2, 46, -0.2 } // MDB sensor detras de carro, barrel largo
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1988,8 +1989,8 @@
 
   //#define MESH_EDIT_GFX_OVERLAY   // Display a graphics overlay while editing the mesh
 
-#define MESH_INSET 20        // Set Mesh bounds as an inset region of the bed // MDB
-#define GRID_MAX_POINTS_X 10 // Don't use more than 15 points per axis, implementation limited.
+#define MESH_INSET 50        // Set Mesh bounds as an inset region of the bed // MDB
+#define GRID_MAX_POINTS_X 5 // Don't use more than 15 points per axis, implementation limited. // MDB
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   //#define UBL_HILBERT_CURVE       // Use Hilbert distribution for less travel when probing multiple points
@@ -2008,7 +2009,7 @@
   //=================================== Mesh ==================================
   //===========================================================================
 
-  #define MESH_INSET 10          // Set Mesh bounds as an inset region of the bed
+  #define MESH_INSET 50          // Set Mesh bounds as an inset region of the bed // MDB
   #define GRID_MAX_POINTS_X 3    // Don't use more than 7 points per axis, implementation limited.
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
@@ -2032,7 +2033,7 @@
 #define LCD_BED_TRAMMING // MDB
 
 #if ENABLED(LCD_BED_TRAMMING)
-  #define BED_TRAMMING_INSET_LFRB { 40, 40, 40, 40 } // (mm) Left, Front, Right, Back insets // MDB
+  #define BED_TRAMMING_INSET_LFRB { 50, 50, 50, 50 } // (mm) Left, Front, Right, Back insets // MDB
   #define BED_TRAMMING_HEIGHT      0.0        // (mm) Z height of nozzle at leveling points
   #define BED_TRAMMING_Z_HOP       4.0        // (mm) Z height of nozzle between leveling points
   #define BED_TRAMMING_INCLUDE_CENTER       // Move to the center after the last corner // MDB
