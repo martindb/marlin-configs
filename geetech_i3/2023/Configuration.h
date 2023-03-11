@@ -536,7 +536,7 @@
  *   999 : Dummy Table that ALWAYS reads 100°C or the temperature defined below.
  *
  */
-#define TEMP_SENSOR_0 11 // MDB
+#define TEMP_SENSOR_0 1 // MDB
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
@@ -667,12 +667,24 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    // MK8 con M106 S255 (ventilador a full) // MDB
-    // pid autotune (M303 E0 S200 C8 // MDB
-    #define DEFAULT_Kp 17.23 // MDB
-    #define DEFAULT_Ki 0.76  // MDB
-    #define DEFAULT_Kd 98.22 // MDB
-  #endif
+// // MK8 con M106 S255 (ventilador a full) // MDB
+// // pid autotune (M303 E0 S200 C8 // MDB antes modificacion marzo 2023 (thermistor en 1, no se si esta es, pero se uso siempre asi)
+// #define DEFAULT_Kp 17.23 // MDB
+// #define DEFAULT_Ki 0.76  // MDB
+// #define DEFAULT_Kd 98.22 // MDB
+
+// MK8 con M106 S255 (ventilador a full) // MDB
+// pid autotune (M303 E0 S220 C8 // MDB despues modificacion marzo 2023 thermistor en 11 (no se exactamente si es 11 o cual, estaba en 1 originalmente)
+    // #define DEFAULT_Kp 14.22 // MDB
+    // #define DEFAULT_Ki 0.69  // MDB
+    // #define DEFAULT_Kd 73.11 // MDB
+    
+// MK8 con M106 S255 (ventilador a full) // MDB
+// pid autotune (M303 E0 S220 C8 // MDB despues modificacion marzo 2023 thermistor en 1 (no se exactamente si es 11 o cual, estaba en 1 originalmente)
+  #define DEFAULT_Kp 17.53  // MDB
+  #define DEFAULT_Ki 0.86  // MDB
+  #define DEFAULT_Kd 89.73  // MDB
+#endif
 #endif
 
 /**
