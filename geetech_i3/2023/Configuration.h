@@ -667,20 +667,8 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-// // MK8 con M106 S255 (ventilador a full) // MDB
-// // pid autotune (M303 E0 S200 C8 // MDB antes modificacion marzo 2023 (thermistor en 1, no se si esta es, pero se uso siempre asi)
-// #define DEFAULT_Kp 17.23 // MDB
-// #define DEFAULT_Ki 0.76  // MDB
-// #define DEFAULT_Kd 98.22 // MDB
-
 // MK8 con M106 S255 (ventilador a full) // MDB
-// pid autotune (M303 E0 S220 C8 // MDB despues modificacion marzo 2023 thermistor en 11 (no se exactamente si es 11 o cual, estaba en 1 originalmente)
-    // #define DEFAULT_Kp 14.22 // MDB
-    // #define DEFAULT_Ki 0.69  // MDB
-    // #define DEFAULT_Kd 73.11 // MDB
-    
-// MK8 con M106 S255 (ventilador a full) // MDB
-// pid autotune (M303 E0 S220 C8 // MDB despues modificacion marzo 2023 thermistor en 1 (no se exactamente si es 11 o cual, estaba en 1 originalmente)
+// pid autotune (M303 E0 S220 C8 // MDB despues modificacion marzo 2023 thermistor en 1
   #define DEFAULT_Kp 17.53  // MDB
   #define DEFAULT_Ki 0.86  // MDB
   #define DEFAULT_Kd 89.73  // MDB
@@ -1499,7 +1487,7 @@
  */
 // #define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }
 // #define NOZZLE_TO_PROBE_OFFSET { -23, -40, -0.3 } // MDB Sensor 12mm al lado de ventiladores y barrel estandard
-#define NOZZLE_TO_PROBE_OFFSET { 7.2, 46, -0.2 } // MDB sensor detras de carro, barrel largo
+#define NOZZLE_TO_PROBE_OFFSET { 7.2, 46, -0.8 } // MDB sensor detras de carro, barrel largo
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
