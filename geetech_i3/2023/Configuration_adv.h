@@ -303,7 +303,7 @@
 #define THERMAL_PROTECTION_PERIOD 60    // Seconds // MDB, original 40
 #define THERMAL_PROTECTION_HYSTERESIS 6 // Degrees Celsius // MDB, original 4
 
-  #define ADAPTIVE_FAN_SLOWING              // Slow part cooling fan if temperature drops // MDB
+  // #define ADAPTIVE_FAN_SLOWING              // Slow part cooling fan if temperature drops // MDB
   #if BOTH(ADAPTIVE_FAN_SLOWING, PIDTEMP)
     #define NO_FAN_SLOWING_IN_PID_TUNING    // Don't slow fan speed during M303 // MDB
   #endif
